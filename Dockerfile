@@ -3,6 +3,10 @@ FROM alpine:3.12.0
 
 LABEL MAINTAINER="ZYL"
 
+# Alpine Linux 系统镜像源设置
+ENV APK_MIRROR="dl-cdn.alpinelinux.org" \
+    APK_MIRROR_SCHEME="http"
+
 # PHP 设置
 ENV INSTALL_PHP_EXTENSION="php7-cli php7-json php7-phar php7-iconv php7-openssl php7-zlib php7-session unzip "
 
